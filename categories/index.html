@@ -276,6 +276,9 @@
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
 
         </div>
@@ -303,15 +306,6 @@
   <div class="site-description motion-element" itemprop="description">BigPigPeiqi随便写写的博客~</div>
 </div>
   <nav class="site-state motion-element">
-      <div class="site-state-item site-state-posts">
-        
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-    
   </nav>
 
 
@@ -420,6 +414,32 @@
 <script src="/js/post-details.js?v=7.3.0"></script>
 
   
+
+    
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', function() {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'nyOfiKJjwGc9pRlmo0wz87wb-gzGzoHsz',
+    appKey: 'VjyVzPH38I1SbY3FvXOLHcxO',
+    placeholder: '评论一下~',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-CN' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
