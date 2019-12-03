@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-08T09:15:23.772Z</updated>
+  <updated>2019-12-03T14:38:53.346Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows下tensorflow-gpu快速安装方法</title>
+    <link href="http://yoursite.com/2019/09/15/Windows%E4%B8%8Btensorflow-gpu%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/09/15/Windows下tensorflow-gpu快速安装方法/</id>
+    <published>2019-09-15T09:19:44.000Z</published>
+    <updated>2019-12-03T14:38:53.346Z</updated>
+    
+    <content type="html"><![CDATA[<p>我第一次安装tensorflow-gpu时从网上搜索了一堆教程，跟着那些乱七八糟的教程整了半天都没整好，最后啥都没管直接<code>conda install tensorflow-gpu</code>了一下，测试发现没啥问题，就是不知道为什么网上没有这种方法的教程（或者这个方法只是我碰巧好用？），但是上次帮同学安装也用的这个方法，安装十分成功没有任何问题。</p><ul><li>PS：一定要用官方镜像源，不要设成清华啥的国内镜像，我当时用清华的镜像反正是不行，报错了。。。</li></ul><h5 id="详细步骤"><a href="#详细步骤" class="headerlink" title="详细步骤"></a>详细步骤</h5><ol><li>运行Anaconda Prompt</li><li>输入安装命令<code>conda install tensorflow-gpu</code></li><li>根据提示yes回车，然后耐心等待几个小时（大概要下载一个多G的东西，我用校园网峰值速度没超过1MB/s,毕竟是官方的镜像速度上不去）</li><li>更新你的显卡驱动到最新版</li></ol><p>好了，大功告成！就是这么简单！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我第一次安装tensorflow-gpu时从网上搜索了一堆教程，跟着那些乱七八糟的教程整了半天都没整好，最后啥都没管直接&lt;code&gt;conda install tensorflow-gpu&lt;/code&gt;了一下，测试发现没啥问题，就是不知道为什么网上没有这种方法的教程（或者这
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>基于LSTM对案件罪名进行预测（都是干货）</title>
